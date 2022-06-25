@@ -1,0 +1,111 @@
+* {
+    /*border: 1px solid red;*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background-color: #bc002d;
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15%;
+    flex: auto;
+}
+
+.navbar a {
+    color: #f9faf8;
+    text-decoration: none;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.navbar a:hover {
+    color:#e5e7eb;
+}
+
+.left-side button:hover {
+    background-color: #e5e7eb;
+}
+
+.left-side button:active {
+    background-color: #3882f6;
+    color: #e5e7eb;
+}
+
+.navbar .logo {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.navbar .nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.hero {
+    display: flex;
+    background-color: #bc002d;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    padding: 40px 20%;
+    flex: auto;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    gap: 4px;
+    flex: auto;
+}
+
+.left-side .message {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
+}
+
+.left-side p {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.left-side button {
+    background-color: whitesmoke;
+    color: #bc002d;
+    font-weight: bolder;
+    width: 80px;
+    height: 25px;
+    margin-top: 4px;
+    border-radius: 6px;
+    border-style: none;
+}
+
+.right-side {
+    display: flex;
+    width: fit-content;
+    height:fit-content;
+    background-color: white;
+    width: 320px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    flex: auto;
+}
+
+.right-side .gallery {
+    background-color: #bc002d;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
