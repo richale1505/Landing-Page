@@ -8,19 +8,23 @@
 .main-container {
     display: flex;
     flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+/*Navigation bar*/
+
 .navbar {
-    background-color: #bc002d;
+    background-color: #1f2937;
     display: flex;
     height: 40px;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 15%;
+    padding: 5px 10%;
     flex: auto;
 }
 
-.navbar a {
+.navbar a,
+.logo {
     color: #f9faf8;
     text-decoration: none;
     font-family: Verdana, Tahoma, sans-serif;
@@ -28,15 +32,6 @@
 
 .navbar a:hover {
     color:#e5e7eb;
-}
-
-.left-side button:hover {
-    background-color: #e5e7eb;
-}
-
-.left-side button:active {
-    background-color: #3882f6;
-    color: #e5e7eb;
 }
 
 .navbar .logo {
@@ -50,23 +45,26 @@
     gap: 10px;
 }
 
+/*Hero // section 1*/
+
 .hero {
     display: flex;
-    background-color: #bc002d;
+    background-color: #1f2937;
     justify-content: center;
     align-items: center;
     gap: 14px;
-    padding: 40px 20%;
-    flex: auto;
+    height: 400px;
+    padding: 40px 15%;
+    flex: 1;
 }
 
 .left-side {
     display: flex;
     flex-direction: column;
     width: 400px;
-    height: 200px;
+    height: auto;
     gap: 4px;
-    flex: auto;
+    flex: 1;
 }
 
 .left-side .message {
@@ -77,18 +75,30 @@
 
 .left-side p {
     color: #e5e7eb;
+
     font-size: 18px;
 }
 
 .left-side button {
-    background-color: whitesmoke;
-    color: #bc002d;
+    background-color: #3882f6;
+    color: #e5e7eb;
     font-weight: bolder;
     width: 80px;
     height: 25px;
     margin-top: 4px;
     border-radius: 6px;
     border-style: none;
+}
+
+.left-side button:hover,
+.fourth-section .box button:hover {
+    background-color: #2e6bcc;
+}
+
+.left-side button:active,
+.fourth-section .box button:active {
+    background-color: #3882f6;
+    color: #e5e7eb;
 }
 
 .right-side {
@@ -100,12 +110,130 @@
     height: 200px;
     justify-content: center;
     align-items: center;
-    flex: auto;
+    flex: 1;
 }
 
-.right-side .gallery {
-    background-color: #bc002d;
+/* section 2 */
+
+.second-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    gap: 50px;
+    height: 400px;
+}
+
+.second-section .information p {
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.second-section .options-container {
+    display: flex;
+    justify-content: center;
+    padding: 0 20%;
+    gap: 20px;
+}
+
+.second-section .options-container .box {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    height: 200px;
+    flex:1;
+}
+
+.second-section .options-container .box img {
+    border: 2px solid #2e6bcc;
+    border-radius: 10px;
+    width: auto;
+    height: 60%;
+}
+
+.second-section .options-container .box p {
+    text-align: center;
+    font-size: small;
+}
+
+/* Section 3 */
+
+.third-section {
+    display: flex;
+    background-color: #e5e7eb;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    padding: 80px 20%;
+    flex: 1;
+}
+
+.third-section .paragraph {
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: 100px;
+    font-style: italic;
+    flex: 1;
+}
+
+.third-section .paragraph-footing {
+    align-self: flex-end;
+    font-weight: bolder;
+    padding-right: 40px;
+    padding-top: 8px;
+}
+
+/* Section 4 */
+
+.fourth-section {
+    display: flex;
+    height: 300px;
+    padding: 0 18%;
+    align-items: center;
+    justify-content: center;
+}
+
+.fourth-section .box {
+    display: flex;
+    background-color: #3882f6;
+    align-items: center;
+    padding: 50px 80px;
+    gap: 60px;
+    justify-content: space-between;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.fourth-section .box .title {
+    color: #f9faf8;
+    font-size: large;
+    font-weight: bold;
+}
+
+.fourth-section .box .msj {
+    color: #e5e7eb;
+}
+
+.fourth-section .box button {
     width: 100px;
-    height: 100px;
-    border-radius: 50px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #3882f6;
+    border: 2px solid #f9faf8;
+    font-weight: bolder;
+    color: #f9faf8;
+}
+
+/* Footer*/
+
+.footer {
+    display: flex;
+    background-color: #1f2937;
+    color: #f9faf8;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
 }
